@@ -36,10 +36,10 @@ jobs:
       - name: Deploy changes via ftp
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp.sacramentagenda.net
+          server: ftp.sblik.com
           username: ${{ secrets.USER_NAME }}
           password: ${{ secrets.PASSWORD }}         
-          server-dir: /public_html/wp-content/plugins/my_custom_plugin
+          server-dir: /public_html/wp-content/plugins/webhook-trigger
           exclude: |
             **/exclude/**
             **/.github/** 
